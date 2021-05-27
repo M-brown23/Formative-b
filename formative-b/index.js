@@ -34,12 +34,55 @@ var  getBackgroundVar = document.getElementById('backgroundid');
 
 if (getBackground === 'celadon') {
 getBackgroundVar.classLit.add('celadonBackground')
+  } else {
+    getBackgroundVar.classList.remove('celadonBackground');
+  }
+  
+  if (getBackground === 'graphite') {
+getBackgroundVar.classLit.add('graphiteBackground')
+  } else {
+    getBackgroundVar.classList.remove('graphiteBackground');
+  }
+  
+    if (getBackground === 'rose') {
+getBackgroundVar.classLit.add('roseBackground')
+  } else {
+    getBackgroundVar.classList.remove('roseBackground');
+  }
+  
+//   Changing of Fonts
+  
+  function fontFunction() {
+   var getFontVar = document.getElementById('font') 
+  
+   if(getFont ==='handwriting-font'){
+   getFontVar.classList.add('handwriting');
+   } else {
+       getFontVar.classList.remove('handwriting');
+   }
+    
+      if(getFont ==='print-font'){
+   getFontVar.classList.add('print');
+   } else {
+       getFontVar.classList.remove('print');
+   }
+    
+     if(getFont ==='sketch-font'){
+   getFontVar.classList.add('sketch');
+   } else {
+       getFontVar.classList.remove('sketch');
+   }
 
-}
+  }
 
-}
+imageFunction()
+backgroundFunction()
+borderFunction()
+fontFunction()
 
-  // query for background select, that is what you check in our ifs...
-
+  
+  var messageVar = document.getElementById('message')
+  
+  
 
 };
